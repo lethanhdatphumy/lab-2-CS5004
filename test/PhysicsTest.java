@@ -5,10 +5,10 @@ import distance.Physics;
 import distance.Point3D;
 import org.junit.jupiter.api.Test;
 
-/** Unit tests for the {@link Physics} class. */
+/**
+ * Unit tests for the {@link Physics} class.
+ */
 class PhysicsTest {
-
-  /** Tests velocity calculation with valid input. */
   @Test
   void testVelocityNormal() {
     Point3D p1 = new Point3D(0, 0, 0);
