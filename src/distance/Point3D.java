@@ -48,7 +48,7 @@ public class Point3D {
    *
    * @return the x-coordinate
    */
-  public Integer getX() {
+  public int getX() {
     return x;
   }
 
@@ -57,7 +57,7 @@ public class Point3D {
    *
    * @return the y-coordinate
    */
-  public Integer getY() {
+  public int getY() {
     return y;
   }
 
@@ -66,7 +66,7 @@ public class Point3D {
    *
    * @return the z-coordinate
    */
-  public Integer getZ() {
+  public int getZ() {
     return z;
   }
 
