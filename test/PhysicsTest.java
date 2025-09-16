@@ -1,6 +1,8 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import distance.Physics;
+import distance.Point3D;
 import org.junit.jupiter.api.Test;
 
 /** Unit tests for the {@link Physics} class. */

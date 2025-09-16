@@ -1,3 +1,5 @@
+package distance;
+
 /**
  * Represents a point in 3-dimensional space with integer coordinates.
  * Provides constructors, getters, distance calculation, and equality check.
@@ -8,7 +10,7 @@ public class Point3D {
   private final int z;
 
   /**
-   * Constructs a Point3D at the origin (0, 0, 0).
+   * Constructs a distance.Point3D at the origin (0, 0, 0).
    */
   public Point3D() {
     this.x = 0;
@@ -17,7 +19,7 @@ public class Point3D {
   }
 
   /**
-   * Constructs a Point3D with the specified coordinates.
+   * Constructs a distance.Point3D with the specified coordinates.
    *
    * @param x the x-coordinate
    * @param y the y-coordinate
@@ -30,9 +32,9 @@ public class Point3D {
   }
 
   /**
-   * Constructs a Point3D by copying another Point3D.
+   * Constructs a distance.Point3D by copying another distance.Point3D.
    *
-   * @param point3D the Point3D to copy
+   * @param point3D the distance.Point3D to copy
    */
   public Point3D(Point3D point3D) {
     this.x = point3D.x;
@@ -68,9 +70,9 @@ public class Point3D {
   }
 
   /**
-   * Calculates the Euclidean distance from this point to another Point3D.
+   * Calculates the Euclidean distance from this point to another distance.Point3D.
    *
-   * @param other the other Point3D
+   * @param other the other distance.Point3D
    * @return the distance between the two points
    */
   public double distanceTo(Point3D other) {
@@ -81,10 +83,10 @@ public class Point3D {
   }
 
   /**
-   * Checks if this Point3D is equal to another object.
+   * Checks if this distance.Point3D is equal to another object.
    *
    * @param obj the object to compare
-   * @return true if the object is a Point3D with the same coordinates, false otherwise
+   * @return true if the object is a distance.Point3D with the same coordinates, false otherwise
    */
   @Override
   public boolean equals(Object obj) {

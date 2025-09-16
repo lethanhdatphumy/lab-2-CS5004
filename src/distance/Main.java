@@ -1,5 +1,7 @@
+package distance;
+
 /**
- * The Main class demonstrates the usage of Point3D and Physics classes. It calculates the
+ * The distance.Main class demonstrates the usage of distance.Point3D and distance.Physics classes. It calculates the
  * displacement and velocity between two 3D points.
  */
 public class Main {
