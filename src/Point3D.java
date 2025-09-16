@@ -1,5 +1,7 @@
 public class Point3D {
-  private int x, y, z;
+  private final int x;
+    private final int y;
+    private final int z;
 
   /*
    ** A no-parameter constructor (aka the "default" constructor). This should set the values of x, y, and z to zero (0).
