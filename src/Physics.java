@@ -1,8 +1,11 @@
+/**
+ * Utility class for physics-related calculations involving Point3D objects.
+ */
 public class Physics {
 
   /**
-   * Calculates the average velocity between two Point3D objects over a given time period. Average
-   * velocity = distance / time
+   * Calculates the average velocity between two Point3D objects over a given time period.
+   * Average velocity = distance / time
    *
    * @param one The first Point3D position
    * @param two The second Point3D position

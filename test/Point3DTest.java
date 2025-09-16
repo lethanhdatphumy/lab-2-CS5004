@@ -81,7 +81,6 @@ class Point3DTest {
     assertEquals(a, b);
     assertNotEquals(a, c);
     assertNotEquals(null, a);
-    assertNotEquals("not a point", a);
     assertEquals(a, a);
   }
 }

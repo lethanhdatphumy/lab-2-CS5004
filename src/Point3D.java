@@ -1,10 +1,14 @@
+/**
+ * Represents a point in 3-dimensional space with integer coordinates.
+ * Provides constructors, getters, distance calculation, and equality check.
+ */
 public class Point3D {
   private final int x;
-    private final int y;
-    private final int z;
+  private final int y;
+  private final int z;
 
-  /*
-   ** A no-parameter constructor (aka the "default" constructor). This should set the values of x, y, and z to zero (0).
+  /**
+   * Constructs a Point3D at the origin (0, 0, 0).
    */
   public Point3D() {
     this.x = 0;
@@ -12,8 +16,12 @@ public class Point3D {
     this.z = 0;
   }
 
-  /*
-   ** A constructor that takes 3 integers, representing x, y, z in that order
+  /**
+   * Constructs a Point3D with the specified coordinates.
+   *
+   * @param x the x-coordinate
+   * @param y the y-coordinate
+   * @param z the z-coordinate
    */
   public Point3D(int x, int y, int z) {
     this.x = x;
@@ -21,8 +29,10 @@ public class Point3D {
     this.z = z;
   }
 
-  /*
-   ** A "copy constructor" that takes a Point3D as its only parameter
+  /**
+   * Constructs a Point3D by copying another Point3D.
+   *
+   * @param point3D the Point3D to copy
    */
   public Point3D(Point3D point3D) {
     this.x = point3D.x;
@@ -30,29 +40,38 @@ public class Point3D {
     this.z = point3D.z;
   }
 
-  /*
-   ** Getter method for x
+  /**
+   * Returns the x-coordinate of this point.
+   *
+   * @return the x-coordinate
    */
   public Integer getX() {
     return x;
   }
 
-  /*
-   ** Getter method for y
+  /**
+   * Returns the y-coordinate of this point.
+   *
+   * @return the y-coordinate
    */
   public Integer getY() {
     return y;
   }
 
-  /*
-   ** Getter method for z
+  /**
+   * Returns the z-coordinate of this point.
+   *
+   * @return the z-coordinate
    */
   public Integer getZ() {
     return z;
   }
 
-  /*
-   ** The method for calculating distance to another 3D vector
+  /**
+   * Calculates the Euclidean distance from this point to another Point3D.
+   *
+   * @param other the other Point3D
+   * @return the distance between the two points
    */
   public double distanceTo(Point3D other) {
     double dx = this.x - other.x;
@@ -61,8 +80,11 @@ public class Point3D {
     return Math.sqrt(dx * dx + dy * dy + dz * dz);
   }
 
-  /*
-   ** An equals method that allows us to compare a Point3D instance to another Point3D object. Using hashCode.
+  /**
+   * Checks if this Point3D is equal to another object.
+   *
+   * @param obj the object to compare
+   * @return true if the object is a Point3D with the same coordinates, false otherwise
    */
   @Override
   public boolean equals(Object obj) {
