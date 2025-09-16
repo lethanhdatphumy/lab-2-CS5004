@@ -1,17 +1,18 @@
 package distance;
 
 /**
- * Represents a point in 3-dimensional space with integer coordinates.
- * Provides constructors, getters, distance calculation, and equality check.
+ * Represents a point in 3-dimensional space with integer coordinates. Provides constructors,
+ * getters, distance calculation, and equality check.
  */
 public class Point3D {
-  private final int x;
+  @SuppressWarnings("checkstyle:MemberName")
+  private final int  x;
+  @SuppressWarnings("checkstyle:MemberName")
   private final int y;
+  @SuppressWarnings("checkstyle:MemberName")
   private final int z;
 
-  /**
-   * Constructs a distance.Point3D at the origin (0, 0, 0).
-   */
+  /** Constructs a distance.Point3D at the origin (0, 0, 0). */
   public Point3D() {
     this.x = 0;
     this.y = 0;
@@ -90,8 +91,12 @@ public class Point3D {
    */
   @Override
   public boolean equals(Object obj) {
-    if (this == obj) return true;
-    if (obj == null || getClass() != obj.getClass()) return false;
+    if (this == obj) {
+      return true;
+    }
+    if (obj == null || getClass() != obj.getClass()) {
+      return false;
+    }
 
     Point3D other = (Point3D) obj;
     return this.x == other.x && this.y == other.y && this.z == other.z;
