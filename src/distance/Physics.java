@@ -1,8 +1,6 @@
 package distance;
 
-/**
- * Utility class for physics-related calculations involving distance.Point3D objects.
- */
+/** Utility class for physics-related calculations involving distance.Point3D objects. */
 public class Physics {
 
   /**
